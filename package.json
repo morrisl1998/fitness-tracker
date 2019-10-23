@@ -1,0 +1,22 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "description": "rest api written in node with server side functionalities for the excersise tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "author": "Leland Morris",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
