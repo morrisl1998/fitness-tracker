@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
+
 const userController = require('./controllers/Users');
 const exerciseController = require('./controllers/Exercise');
-
+const loginController = require('./controllers/Users');
 
 dotenv.config({path: './config.env'});
 
@@ -19,6 +20,7 @@ app.get('/port', (req,res) => res.send ("Using port: "+port));
 app.use('/static', express.static(path.join(__dirname, '../HTML')));
 app.use('/users' , userController);
 app.use('/exercise', exerciseController);
+app.use('/login', userController);
 
 
 app.listen(port, () => console.log(`Running on http://localhost:${port}`));
