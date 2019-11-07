@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Leland Morris",
   "license": "ISC",
@@ -14,7 +16,6 @@
     "concurrently": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.7.6",
     "morgan": "^1.9.1",
     "node-fetch": "^2.6.0"
   },
