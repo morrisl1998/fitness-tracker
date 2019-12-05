@@ -5,7 +5,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Primary bold title
+          This is an app where you can track the distance and amount of time you have spent executing a certain exercise!
         </h1>
         <h2 class="subtitle">
           Primary bold subtitle
