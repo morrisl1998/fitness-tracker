@@ -19,7 +19,7 @@
 
         <div class = "form-group">
             <label for="duration">How long did you go?</label>
-            <input type="text" v-model="gamertag" id="gamertag" placeholder="Seconds, minutes, etc...">
+            <input type="text" v-model="gamertag" id="timing" placeholder="Seconds, minutes, etc...">
         </div>
 
         <div class = "form-group">
