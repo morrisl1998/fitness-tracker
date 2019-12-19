@@ -2,6 +2,7 @@
   <div class = "container">
     <Header />
     <Nav />
+    <Select />
     <router-view />
     <Footer />
    
@@ -12,12 +13,13 @@
 <script>
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Select from './components/Select';
 import Footer from './components/Footer';
 
 export default {
   name: 'app',
   components: {
-    Nav, Header, Footer
+    Nav, Header, Select, Footer
   }
 }
 </script>
